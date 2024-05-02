@@ -19,4 +19,3 @@ The GroceryList App is a digital solution designed to simplify and enhance the g
 2. Navigate to the project directory:
 
 3. Open the `index.html` file in your web browser.
-# grocery-list-
