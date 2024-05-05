@@ -1,13 +1,147 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #141115;
-    color: #fdf7fa;
+  background-color: #d0ddbe;
+  color: #22272f;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
+h2 {
+  font-family: "Just Another Hand", cursive;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.text-span {
+  color: #d63232;
+}
+
+#main-container {
+  max-width: 480px;
+  min-height: 500px;
+  margin: 80px auto;
+}
+
+/* Input container */
+
+#input-field {
+  display: flex;
+  height: 40px;
+  margin: 0 auto;
+}
+
+#input-value {
+  flex: 1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#submit-btn {
+  background-color: #d93532;
+  width: 15%;
+  padding: 10px;
+  text-align: center;
+  color: #fafafa;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#submit-btn:hover {
+  background-color: #dd4a48;
+}
+
+#error {
+  margin-top: 10px;
+}
+
+/* Items container */
+
+#items-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.new-task {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #faf1e4;
+  padding: 10px 0;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.new-task:last-child {
+  border-bottom: none;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.delete-btn,
+.edit-btn {
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  font-size: 0.75rem;
+  margin: 0 0.15rem;
+  transition: var(--transition);
+}
+
+.delete-btn {
+  color: #d63232;
+}
+
+.edit-btn {
+  color: #417b5a;
+}
+
+.item-value {
+  padding-left: 10px;
+}
+
+#clear-btn {
+  text-transform: uppercase;
+  font-family: "Just Another Hand", cursive;
+  font-weight: 400;
+  display: grid;
+  align-items: center;
+  background: transparent;
+  border-color: transparent;
+  color: #d63232;
+  margin: 0 auto;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#clear-btn:hover {
+  color: #dd4a48;
+}
+
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: #999;
+}
