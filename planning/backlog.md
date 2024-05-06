@@ -6,7 +6,7 @@
 
 ## Should-Haves
 
-- [ ] Edit or remove text.
+- [ ] Edit or remove the item.
 
 ## Could-Haves
 

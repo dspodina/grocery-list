@@ -1,4 +1,4 @@
-# User Persona: Grocery Shopper
+# User Persona: Todo-list
 
 ## Name: Sarah Thompson
 
