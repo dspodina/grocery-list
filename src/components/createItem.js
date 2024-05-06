@@ -19,16 +19,14 @@ const createItem = (item) => {
   // checkbox container
   const checkbox = document.createElement("input");
   checkbox.setAttribute("type", "checkbox");
-  checkbox.id = item.id; 
+  checkbox.id = item.id;
   checkbox.setAttribute("name", "task");
-  
 
   const label = document.createElement("label");
-  label.setAttribute ("for", `task-checkbox-${item.id}`);
+  label.setAttribute("for", `task-checkbox-${item.id}`);
   label.innerHTML = item.text;
-  label.classList.add("item-value"); 
-  checkbox.checked = false; 
-  
+  label.classList.add("item-value");
+  checkbox.checked = false;
 
   // buttons container
   const btnContainer = document.createElement("div");
@@ -40,7 +38,7 @@ const createItem = (item) => {
   editBtn.classList.add("edit-btn");
 
   editBtn.addEventListener("click", () => {
-    editBtnHandler();
+    editBtnHandler(item);
   });
 
   // delete button
@@ -52,7 +50,7 @@ const createItem = (item) => {
     deleteBtnHandler(item.id);
   });
 
-  checkboxContainer.append(checkbox, label)
+  checkboxContainer.append(checkbox, label);
   btnContainer.append(editBtn, deleteBtn);
   container.append(checkboxContainer, btnContainer);
 
